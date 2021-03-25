@@ -9,7 +9,7 @@ Users log in with Discord and are only granted access if they are in the High Th
 
 After logging in, the user is presented with an introductory text and a list of folders & files created by other users.
 
-The user can open these folders and preview the files within them. He can also edit the file directly and save it's contents for other's to see.
+The user can open these folders and preview the files within them. He can also edit the file directly and save it's contents for others to see.
 
 To prevent griefing it is possible to request community approval as a pre-requisite in order to save a file. If enough users approve, the file will be updated to reflect the changes made.
 
