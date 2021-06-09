@@ -6,7 +6,7 @@ const index = () => {
         const date = new Date(entry.date).toDateString()
         return (
             <div key={key} className="column">
-                <h3>{entry.title}</h3>
+                <h4>{entry.title} v0.1.0</h4>
                 <small>{date}</small>
                 <p style={{ marginTop: '20px' }}>{entry.description}</p>
             </div>
