@@ -8,7 +8,7 @@ const index = () => {
             <div key={key} className="column">
                 <h3>{entry.title}</h3>
                 <small>{date}</small>
-                <p style={{ marginTop: '20px' }}>{entry.description}</p>
+                <p dangerouslySetInnerHTML={{ __html: entry.description }} style={{ marginTop: '20px' }}></p>
             </div>
         )
     })
