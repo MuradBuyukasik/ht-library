@@ -1,4 +1,16 @@
 {
+  "name": "High Thumos Timeline",
+  "author": "Murad Buyukasik <contact@muradbuyukasik.com> (https://muradbuyukasik.com)",
+  "description": "For now just a page to keep a timeline of notable events that happened in Discord.",
+  "version": "0.1.0",
+  "license": "GPL3",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuradBuyukasik/high-thumos-community"
+  },
+  "bugs": {
+    "url": "https://github.com/MuradBuyukasik/high-thumos-community/issues"
+  },
   "dependencies": {
     "next": "^10.2.3",
     "react": "^17.0.2",
