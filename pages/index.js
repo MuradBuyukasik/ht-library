@@ -17,6 +17,7 @@ const index = () => {
         <>
             <div className="row">
                 <h2>High Thumos Timeline v0.1.0</h2>
+                <a href="https://github.com/MuradBuyukasik/high-thumos-community"><small>source</small></a>
                 {entries}
             </div>
         </>
