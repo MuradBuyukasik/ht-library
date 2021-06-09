@@ -11,6 +11,10 @@ a:visited {
     color: #62ffff;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     background-color: #212121;
     color: #fff;
