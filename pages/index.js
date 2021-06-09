@@ -1,8 +1,8 @@
 import React from 'react'
 import data from '../public/events.json'
 
-const index = () => {
-    const entries = data.map((entry, key) => {
+const index = ({ entries }) => {
+    entries = entries.map((entry, key) => {
         const date = new Date(entry.date).toDateString()
         return (
             <div key={key} className="column">
@@ -22,6 +22,12 @@ const index = () => {
             </div>
         </>
     )
+}
+
+export const getStaticProps = async (context) => {
+    return {
+        props: { entries: data.reverse() }
+    }
 }
 
 export default index
