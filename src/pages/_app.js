@@ -1,11 +1,14 @@
 // import App from 'next/app'
 import { Provider } from 'next-auth/client'
 import '../styles/style.css'
+import Layout from '../components/layout/Layout'
 
 export default function MyApp({ Component, pageProps }) {
   return (
     <Provider session={pageProps.session}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Provider>
   )
 }
