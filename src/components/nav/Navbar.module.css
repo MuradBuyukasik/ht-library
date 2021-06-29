@@ -1,0 +1,7 @@
+.container {
+	display: flex;
+}
+
+.space-between > * + * {
+	margin-left: 10px;
+}
