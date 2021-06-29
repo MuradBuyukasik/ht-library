@@ -1,8 +1,13 @@
 // import App from 'next/app'
+import { Provider } from 'next-auth/client'
 import '../styles/style.css'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+export default function MyApp({ Component, pageProps }) {
+  return (
+    <Provider session={pageProps.session}>
+      <Component {...pageProps} />
+    </Provider>
+  )
 }
 
 // Only uncomment this method if you have blocking data requirements for
@@ -16,5 +21,3 @@ function MyApp({ Component, pageProps }) {
 //
 //   return { ...appProps }
 // }
-
-export default MyApp
