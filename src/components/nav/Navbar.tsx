@@ -2,7 +2,7 @@ import React from 'react'
 import { User } from '@/types/types'
 import styles from './Navbar.module.css'
 import Link from 'next/link'
-import { useSession, signIn } from 'next-auth/client'
+import { useSession, signIn, signOut } from 'next-auth/client'
 import NameTag from '@/components/user/NameTag'
 
 interface Props {
@@ -14,7 +14,10 @@ const Navbar: React.FC<Props> = ({ user }) => {
 
 	const profileAction = () => {
 		if (session) {
-			return <NameTag name={session.user.name} imageUrl={session.user.image} />
+			return <>
+				<NameTag name={session.user.name} imageUrl={session.user.image} />
+				<button onClick={() => signOut()}>Logout</button>
+			</>
 		} else {
 			return <button onClick={() => signIn()}>Login with Discord</button>
 		}
