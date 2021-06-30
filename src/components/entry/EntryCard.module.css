@@ -5,8 +5,12 @@
 	background-color: #1e1e1e;
 }
 
+.description {
+	margin-top: 10px;
+}
+
 @media only screen and (max-width: 600px)  {
 	.card {
-		margin: 20px 10px;
+		margin: 10px 10px;
 	}
 }

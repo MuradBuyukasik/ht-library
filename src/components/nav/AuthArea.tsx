@@ -13,7 +13,7 @@ const AuthArea = () => {
             </>
         )
     } else {
-        return <button onClick={() => signIn()}>Login with Discord</button>
+        return <button onClick={() => signIn("discord")}>Login with Discord</button>
     }
 }
 
