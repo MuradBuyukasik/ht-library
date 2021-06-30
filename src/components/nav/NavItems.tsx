@@ -6,10 +6,7 @@ const NavItems: React.FC = () => {
     return (
         <div className={`grow-1 ${styles['space-between']}`}>
             <Link href="/">
-                <a>Home</a>
-            </Link>
-            <Link href="#">
-                <a>Post entry</a>
+                <a className={styles['navbar-brand']}>Thumos Timeline <span style={{ fontSize: 'small' }}>v0.2.0</span></a>
             </Link>
         </div>
     )

@@ -2,14 +2,14 @@ import React from 'react'
 import styles from './NameTag.module.css'
 
 interface Props {
-	name: string
+	name?: string,
 	imageUrl: string
 }
 
 const NameTag: React.FC<Props> = ({ name, imageUrl }) => (
-	<div>
-		<img src={imageUrl} width="32" height="32" />
-		{name}
+	<div className={styles.nametag}>
+		<img className={styles.avatar} src={imageUrl} width="48" height="48" />
+		<span className={styles.username}>{name}</span>
 	</div>
 )
 

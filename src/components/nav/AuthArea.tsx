@@ -8,12 +8,12 @@ const AuthArea = () => {
     if (session) {
         return (
             <>
-                <NameTag name={session.user.name} imageUrl={session.user.image} />
+                <NameTag imageUrl={session.user.image} />
                 <button onClick={() => signOut()}>Logout</button>
             </>
         )
     } else {
-        return <button onClick={() => signIn()}>Login</button>
+        return <button onClick={() => signIn("discord")}>Login with Discord</button>
     }
 }
 

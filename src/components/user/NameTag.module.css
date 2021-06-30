@@ -1,0 +1,16 @@
+.nametag {
+	display: flex;
+	align-items: center;
+}
+
+.nametag img {
+	margin-right: 10px;
+}
+
+.avatar {
+	border-radius: 50%;
+}
+
+.username {
+	font-weight: 600;
+}

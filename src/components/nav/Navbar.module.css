@@ -1,7 +1,28 @@
 .container {
 	display: flex;
+	margin: 40px 0;
+	align-items: center;
+}
+
+@media only screen and (max-width: 600px)  {
+	.container {
+		flex-direction: column;
+		margin: 20px 10px;
+	}
 }
 
 .space-between > * + * {
-	margin-left: 10px;
+	margin-left: 40px;
+}
+
+.navbar-item {
+	font-size: 1.1rem;
+	font-weight: 600;
+	color: #fff;
+}
+
+.navbar-brand {
+	font-size: 1.5rem;
+	font-weight: 600;
+	color: #fff;
 }
