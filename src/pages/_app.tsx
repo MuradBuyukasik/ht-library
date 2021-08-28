@@ -1,7 +1,8 @@
 // import App from 'next/app'
-import '../styles/style.css'
+import type { AppProps /*, AppContext */ } from 'next/app'
+import 'tailwindcss/tailwind.css'
 
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps }: AppProps) {
   return <Component {...pageProps} />
 }
 
@@ -10,10 +11,10 @@ function MyApp({ Component, pageProps }) {
 // perform automatic static optimization, causing every page in your app to
 // be server-side rendered.
 //
-// MyApp.getInitialProps = async (appContext) => {
+// MyApp.getInitialProps = async (appContext: AppContext) => {
 //   // calls page's `getInitialProps` and fills `appProps.pageProps`
 //   const appProps = await App.getInitialProps(appContext);
-//
+
 //   return { ...appProps }
 // }
 
